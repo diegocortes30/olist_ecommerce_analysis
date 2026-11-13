@@ -1,6 +1,16 @@
-# olist_ecommerce_analysis
-## Business questions
+# Olist E-Commerce Analysis
+End-to-end analysis of the [Olist Brazilian E-Commerce dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce): data exploration, SQL analysis, data cleaning, Python analysis and a Power BI dashboard.
 
+## Project status
+- [x] Project structure and data dictionary
+- [x] Notebook 01 – Data exploration and quality checks
+- [x] Notebook 02 – SQL layer (5 business questions)
+- [x] Notebook 03 – Data cleaning
+- [ ] Notebook 04 – Analysis
+- [ ] Power BI dashboard
+- [ ] Final report
+
+## Business questions
 | # | Question | Metric | Tables |
 |---|---|---|---|
 | 1 | Which product categories receive the best and worst review scores (minimum 100 reviews)? | Average `review_score` per category | `order_reviews`, `order_items`, `products`, `product_category_name_translation` |
@@ -26,5 +36,23 @@
 - **Q4 – Cancellations:** only 0.63% of orders are canceled. Differences between
   states are small and based on few cases, and the monthly peaks do not follow demand.
 - **Q5 – Payments:** credit card makes up 73.92% of payments (avg 3.51 installments,
-  max 24); every other method has exactly 1 installment. The 11 zero-value /
-  zero-installment payments should be excluded from payment analysis.
+  max 24); every other method has exactly 1 installment. 11 payments are anomalous:
+  9 have a value of 0 (excluded from payment amounts) and 2 credit card payments have
+  0 installments (excluded from installment analysis). They are marked in the cleaned
+  data, not deleted.
+
+## Data cleaning summary
+- Dates stored as text were converted to `datetime`.
+- Missing values were kept as nulls and, when they were unexpected, marked with a flag column instead of being deleted or invented.
+- Zip codes were converted to text and padded to 5 digits (the leading zero had been lost).
+- 610 products without a category were labeled `unknown`; 4 products with weight 0 were set to null.
+- 34 inconsistent seller city names were normalized with a correction dictionary.
+- `geolocation` was left uncleaned because the five business questions do not need coordinates.
+
+## Data
+The raw data is **not included** in this repository. It comes from the
+[Olist Brazilian E-Commerce dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) on Kaggle.
+
+## How to reproduce
+1. Download the 9 CSV files from Kaggle and place them in `data/raw/`.
+2. Run `notebooks/03_data_cleaning.ipynb`. It reads from `raw/` and writes the 8 clean files to `data/processed/`.
