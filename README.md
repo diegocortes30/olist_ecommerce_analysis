@@ -4,7 +4,7 @@ End-to-end analysis of the [Olist Brazilian E-Commerce dataset](https://www.kagg
 
 ## Dashboard
 
-![Olist dashboard](data/reports/figures/dashboard_olist.png)
+![Olist dashboard](reports/figures/dashboard_olist.png)
 
 Built in Power BI from `orders_master.csv` (one row per order), with KPIs, monthly trend, revenue by state, delivery performance and cancellation rate.
 
@@ -45,11 +45,11 @@ Built in Power BI from `orders_master.csv` (one row per order), with KPIs, month
 
 ## Key results
 
-![Late deliveries receive much lower review scores](data/reports/figures/delivery_vs_review.png)
+![Late deliveries receive much lower review scores](reports/figures/delivery_vs_review.png)
 
-![SP generates 38.27% of revenue](data/reports/figures/revenue_by_state.png)
+![SP generates 38.27% of revenue](reports/figures/revenue_by_state.png)
 
-![Orders and revenue grew fast in 2017 and stabilized in 2018](data/reports/figures/monthly_trend.png)
+![Orders and revenue grew fast in 2017 and stabilized in 2018](reports/figures/monthly_trend.png)
 
 ## Data cleaning summary
 
