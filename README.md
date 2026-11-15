@@ -49,6 +49,11 @@ End-to-end analysis of the [Olist Brazilian E-Commerce dataset](https://www.kagg
 - 34 inconsistent seller city names were normalized with a correction dictionary.
 - `geolocation` was left uncleaned because the five business questions do not need coordinates.
 
+## Key results
+- ![Late deliveries receive much lower review scores](reports/figures/delivery_vs_review.png)
+- ![SP generates 38.27% of revenue](reports/figures/revenue_by_state.png)
+- ![Orders and revenue grew fast in 2017 and stabilized in 2018](reports/figures/monthly_trend.png)
+
 ## Data
 The raw data is **not included** in this repository. It comes from the
 [Olist Brazilian E-Commerce dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) on Kaggle.
