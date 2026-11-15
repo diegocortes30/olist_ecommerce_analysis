@@ -55,6 +55,10 @@ End-to-end analysis of the [Olist Brazilian E-Commerce dataset](https://www.kagg
 - ![SP generates 38.27% of revenue](data/reports/figures/revenue_by_state.png)
 - ![Orders and revenue grew fast in 2017 and stabilized in 2018](data/reports/figures/monthly_trend.png)
 
+## Dashboard
+- ![Olist dashboard](data/reports/figures/Dashboard olist.png)
+- Built in Power BI from `orders_master.csv` (one row per order), with KPIs, monthly trend, revenue by state, delivery performance and cancellation rate.
+
 ## Data
 The raw data is **not included** in this repository. It comes from the
 [Olist Brazilian E-Commerce dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) on Kaggle.
