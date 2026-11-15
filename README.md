@@ -40,6 +40,7 @@ End-to-end analysis of the [Olist Brazilian E-Commerce dataset](https://www.kagg
   9 have a value of 0 (excluded from payment amounts) and 2 credit card payments have
   0 installments (excluded from installment analysis). They are marked in the cleaned
   data, not deleted.
+- **Delivery vs. review score:** 8.1% of delivered orders arrived late, and they score 2.57 on average versus 4.29 for on-time orders. Delivery performance is a major driver of customer satisfaction.
 
 ## Data cleaning summary
 - Dates stored as text were converted to `datetime`.
