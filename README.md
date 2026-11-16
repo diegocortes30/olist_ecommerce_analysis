@@ -83,3 +83,7 @@ The raw data is **not included** in this repository. It comes from the
 1. Download the 9 CSV files from Kaggle and place them in `data/raw/`.
 2. Run `notebooks/03_data_cleaning.ipynb`. It reads from `raw/` and writes the 8 clean files to `data/processed/`.
 3. Run `notebooks/04_analysis.ipynb` to build the order-level table and the charts.
+
+## Author
+
+**Diego Enrique Cortés Durón**, Data Analyst · [LinkedIn](www.linkedin.com/in/diego-enrique-cortés-durón-216605237) · [GitHub](https://github.com/diegocortes30)
