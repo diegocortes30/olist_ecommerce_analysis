@@ -8,7 +8,7 @@ End-to-end analysis of the [Olist Brazilian E-Commerce dataset](https://www.kagg
 
 Built in Power BI from `orders_master.csv` (one row per order), with KPIs, monthly trend, revenue by state, delivery performance and cancellation rate.
 
-Full report: [reports/final_report.pdf](reports/final_report.pdf)
+Full report: [reports/final_report.pdf](reports/figures/final_report.pdf)
 
 ## Business questions
 
